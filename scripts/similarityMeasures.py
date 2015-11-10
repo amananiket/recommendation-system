@@ -64,10 +64,10 @@ def main():
 
 	PC, SC, KC, CSim = calculateSimilarityMeasures(ratings, users)
 
-	numpy.savetxt("../data/PearsonCoefficient.csv", PC)
-	numpy.savetxt("../data/SpearmanCoefficient.csv", SC)
-	numpy.savetxt("../data/KendallCoefficient.csv", KC)
-	numpy.savetxt("../data/CosineSimilariy.csv", CSim)
+	numpy.savetxt("../data/PearsonCoefficient.csv", PC, delimiter=",")
+	numpy.savetxt("../data/SpearmanCoefficient.csv", SC, delimiter=",")
+	numpy.savetxt("../data/KendallCoefficient.csv", KC, delimiter=",")
+	numpy.savetxt("../data/CosineSimilariy.csv", CSim, delimiter=",")
 
 
 if __name__ == '__main__':
